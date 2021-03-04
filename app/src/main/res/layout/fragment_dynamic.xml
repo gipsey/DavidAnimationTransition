@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:focusable="true">
+
+    <View
+        android:id="@+id/subject_view"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/oval_red" />
+
+    <View
+        android:id="@+id/target_view"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|end"
+        android:background="@drawable/hole_red" />
+
+</FrameLayout>

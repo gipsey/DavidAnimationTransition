@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/vector_play">
+    <target
+        android:name="top"
+        android:animation="@animator/animator_vector_play_top" />
+    <target
+        android:name="bottom"
+        android:animation="@animator/animator_vector_play_bottom" />
+    <target
+        android:name="root"
+        android:animation="@animator/animator_rotation_90" />
+</animated-vector>

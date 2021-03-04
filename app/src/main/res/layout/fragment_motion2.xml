@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/motion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        app:layoutDescription="@xml/scene2"
+        app:motionDebug="SHOW_PATH">
+
+    <ImageView
+            android:id="@+id/moon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_btn_speak_now" />
+
+    <TextView
+            android:id="@+id/credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bla bla bla"
+            android:textColor="@android:color/white" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

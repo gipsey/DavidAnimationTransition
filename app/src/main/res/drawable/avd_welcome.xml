@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/vector_welcome">
+
+    <target android:name="main">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="3000"
+                android:propertyName="trimPathEnd"
+                android:valueFrom="0"
+                android:valueTo="1" />
+        </aapt:attr>
+    </target>
+
+</animated-vector>

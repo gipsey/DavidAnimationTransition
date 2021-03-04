@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+<!--        <item name="android:statusBarColor">#ffaaff</item>-->
+<!--        <item name="android:navigationBarColor">#ffffaa</item>-->
+<!--        <item name="android:windowBackground">#aaffff</item>-->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@null</item>
+        <item name="android:windowExitTransition">@null</item>
+        <item name="android:windowSharedElementEnterTransition">@null</item>
+        <item name="android:windowSharedElementExitTransition">@null</item>
+    </style>
+
+    <style name="Widget.ShadowPlay" parent="@android:style/Widget" />
+
+    <style name="Widget.ShadowPlay.IconView">
+        <item name="constantShadowTranslationY">4dp</item>
+        <item name="variableShadowTranslationY">8dp</item>
+        <item name="scaleDown">0.85</item>
+        <item name="bigBlurRadius">25</item>
+        <item name="smallBlurRadius">8</item>
+    </style>
+</resources>
