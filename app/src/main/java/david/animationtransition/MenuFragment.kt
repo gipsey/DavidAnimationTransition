@@ -11,10 +11,7 @@ import david.animationtransition.examples.CustomShadowFragment
 import david.animationtransition.examples.DefaultLayoutAnimationFragment
 import david.animationtransition.examples.MotionLayoutFragment
 import david.animationtransition.examples.canvas.CanvasLoadingViewFragment
-import david.animationtransition.examples.drawable.AVDFragment
-import david.animationtransition.examples.drawable.AVDSearchBackFragment
-import david.animationtransition.examples.drawable.AVDWelcomeFragment
-import david.animationtransition.examples.drawable.AnimatedDrawableFragment
+import david.animationtransition.examples.drawable.*
 import david.animationtransition.examples.lottie.LottieDrawableFragment
 import david.animationtransition.examples.lottie.LottieProgramaticallyFragment
 import david.animationtransition.examples.lottie.LottieXmlFragment
@@ -44,7 +41,8 @@ class MenuFragment : Fragment() {
             NavigationItem("Drawable - Animation", AnimatedDrawableFragment::class.java),
             NavigationItem("Drawable - Vector Animation", AVDFragment::class.java),
             NavigationItem("Drawable - Vector Animation - SearchBack", AVDSearchBackFragment::class.java),
-            NavigationItem("Drawable - Vector Animation - Welcome", AVDWelcomeFragment::class.java),
+            NavigationItem("Drawable - Vector Animation - Welcome UNFINISHED", AVDWelcomeFragment::class.java),
+            NavigationItem("Drawable - Vector Animation - Heart UNFINISHED", AVDHeartFragment::class.java),
 
             NavigationItem("View - Simple", ViewAnimationSimpleFragment::class.java),
 
