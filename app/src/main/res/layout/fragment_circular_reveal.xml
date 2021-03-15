@@ -15,5 +15,4 @@
         android:scaleType="centerCrop"
         android:src="@drawable/image_cat"
         android:visibility="invisible" />
-
 </FrameLayout>

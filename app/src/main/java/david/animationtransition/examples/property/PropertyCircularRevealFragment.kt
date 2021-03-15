@@ -31,12 +31,17 @@ class PropertyCircularRevealFragment : Fragment() {
     private fun reveal(view: View) {
         val centerX = view.width / 2.0
         val centerY = view.height / 2.0
-        val r = hypot(centerX, centerY)
+        val r = hypot(centerX, centerY).toFloat()
 
         with(
-            ViewAnimationUtils
-                .createCircularReveal(view, centerX.toInt(), centerY.toInt(), 0f, r.toFloat())
+            ViewAnimationUtils.createCircularReveal(view, centerX.toInt(), centerY.toInt(), 0f, r)
         ) {
+            addListener(object : AnimatorListenerAdapter() {
+                override fun onAnimationStart(animation: Animator?) {
+                    view.visibility = View.VISIBLE
+                }
+            })
+
             duration = 2000
             start()
         }
