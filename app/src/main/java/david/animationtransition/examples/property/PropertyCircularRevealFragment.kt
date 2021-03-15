@@ -29,13 +29,18 @@ class PropertyCircularRevealFragment : Fragment() {
             hide(subject)
 
     private fun reveal(view: View) {
-        val centerX = view.width / 2.0
-        val centerY = view.height / 2.0
-        val r = hypot(centerX, centerY).toFloat()
+        val centerX = view.width / 2f
+        val centerY = view.height / 2f
+        val startRadius = 0f
+        val endRadius = hypot(centerX, centerY)
 
-        with(
-            ViewAnimationUtils.createCircularReveal(view, centerX.toInt(), centerY.toInt(), 0f, r)
-        ) {
+        ViewAnimationUtils.createCircularReveal(
+            view,
+            centerX.toInt(),
+            centerY.toInt(),
+            startRadius,
+            endRadius
+        ).apply {
             addListener(object : AnimatorListenerAdapter() {
                 override fun onAnimationStart(animation: Animator?) {
                     view.visibility = View.VISIBLE
@@ -43,23 +48,33 @@ class PropertyCircularRevealFragment : Fragment() {
             })
 
             duration = 2000
+
             start()
         }
     }
 
-    private fun hide(subject: View) {
-        val centerX = subject.width / 2.0
-        val centerY = subject.height / 2.0
+    private fun hide(view: View) {
+        val centerX = view.width / 2f
+        val centerY = view.height / 2f
+        val startRadius = hypot(centerX, centerY)
+        val endRadius = 0f
 
-        val r = hypot(centerX, centerY)
+        ViewAnimationUtils.createCircularReveal(
+            view,
+            centerX.toInt(),
+            centerY.toInt(),
+            startRadius,
+            endRadius
+        ).apply {
+            addListener(object : AnimatorListenerAdapter() {
+                override fun onAnimationEnd(animation: Animator?) {
+                    view.visibility = View.INVISIBLE
+                }
+            })
 
-        val animator = ViewAnimationUtils.createCircularReveal(subject, centerX.toInt(), centerY.toInt(), r.toFloat(), 0f)
-        animator.addListener(object : AnimatorListenerAdapter() {
-            override fun onAnimationEnd(animation: Animator?) {
-                subject.visibility = View.INVISIBLE
-            }
-        })
-        animator.duration = 2000
-        animator.start()
+            duration = 2000
+
+            start()
+        }
     }
 }
