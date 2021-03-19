@@ -8,10 +8,10 @@
     <path
         android:pathData="@string/heart_stroke_left"
         android:strokeWidth="2"
-        android:strokeColor="@android:color/black" />
+        android:strokeColor="@color/heart" />
 
     <path
         android:pathData="@string/heart_stroke_right"
         android:strokeWidth="2"
-        android:strokeColor="@android:color/black" />
+        android:strokeColor="@color/heart" />
 </vector>

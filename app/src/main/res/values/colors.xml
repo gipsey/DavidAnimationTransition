@@ -9,4 +9,6 @@
     <color name="dark">#000</color>
     <color name="black20Opacity">#33000000</color>
 
+    <color name="heart">#FFf3ac16</color>
+
 </resources>

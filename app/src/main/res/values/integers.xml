@@ -3,5 +3,5 @@
     <integer name="card_flip_time_full">2000</integer>
     <integer name="card_flip_time_half">1000</integer>
 
-    <integer name="duration3">3000</integer>
+    <integer name="duration3">1000</integer>
 </resources>

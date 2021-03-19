@@ -11,25 +11,19 @@ import timber.log.Timber
 
 class AVDHeartFragment : Fragment() {
 
-    private lateinit var imageView: ImageView
-    private var isChecked = false
+    private var isSelected = false
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
         inflater.inflate(R.layout.fragment_avd_center, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        imageView = view.findViewById(R.id.animated_image)
+        val imageView = view.findViewById<ImageView>(R.id.animated_image)
         imageView.setImageResource(R.drawable.animated_selector_avd_heart)
 
-        view.setOnClickListener { animate() }
-    }
-
-    private fun animate() {
-        Timber.d("animate $isChecked")
-
-        isChecked = !isChecked
-        val state = IntArray(if (isChecked) android.R.attr.state_checked else android.R.attr.state_empty)
-
-        imageView.setImageState(state, true)
+        view.setOnClickListener {
+            Timber.d("animate $isSelected")
+            isSelected = !isSelected
+            imageView.isSelected = isSelected
+        }
     }
 }

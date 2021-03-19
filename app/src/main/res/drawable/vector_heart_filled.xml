@@ -8,12 +8,12 @@
     <path
         android:pathData="@string/heart_stroke_left"
         android:strokeWidth="2"
-        android:strokeColor="@android:color/black" />
+        android:strokeColor="@color/heart" />
 
     <path
         android:pathData="@string/heart_stroke_right"
         android:strokeWidth="2"
-        android:strokeColor="@android:color/black" />
+        android:strokeColor="@color/heart" />
 
     <group android:name="filled">
         <clip-path
@@ -21,7 +21,7 @@
             android:pathData="@string/heart_clip_hidden" />
 
         <path
-            android:fillColor="@android:color/black"
+            android:fillColor="@color/heart"
             android:pathData="@string/heart_full_path" />
     </group>
 </vector>

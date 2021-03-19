@@ -42,7 +42,7 @@ class MenuFragment : Fragment() {
             NavigationItem("Drawable - Vector Animation", AVDFragment::class.java),
             NavigationItem("Drawable - Vector Animation - SearchBack", AVDSearchBackFragment::class.java),
             NavigationItem("Drawable - Vector Animation - Welcome UNFINISHED", AVDWelcomeFragment::class.java),
-            NavigationItem("Drawable - Vector Animation - Heart UNFINISHED", AVDHeartFragment::class.java),
+            NavigationItem("Drawable - Vector Animation - Heart", AVDHeartFragment::class.java),
 
             NavigationItem("View - Simple", ViewAnimationSimpleFragment::class.java),
 
