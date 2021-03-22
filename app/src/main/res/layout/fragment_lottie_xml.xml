@@ -10,6 +10,5 @@
         android:layout_gravity="center"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/stay_safe_stay_home" />
-
+        app:lottie_rawRes="@raw/lottie_favorite" />
 </FrameLayout>

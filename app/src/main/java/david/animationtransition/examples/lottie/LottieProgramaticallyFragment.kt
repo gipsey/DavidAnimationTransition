@@ -21,7 +21,7 @@ class LottieProgramaticallyFragment : Fragment() {
             repeatMode = LottieDrawable.RESTART
             repeatCount = LottieDrawable.INFINITE
 
-            val result = LottieCompositionFactory.fromRawResSync(view.context, R.raw.hands_animation_blue)
+            val result = LottieCompositionFactory.fromRawResSync(view.context, R.raw.lottie_hands_blue)
             val successResult = result.value
             val errorResult = result.exception
 
