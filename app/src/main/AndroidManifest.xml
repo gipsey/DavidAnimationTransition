@@ -13,15 +13,20 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
+        <activity android:name="david.animationtransition.compose.ComposeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
         <activity android:name="david.animationtransition.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name="david.animationtransition.examples.transition.Transition1Activity" />
+        <activity android:name="david.animationtransition.anim.transition.Transition1Activity" />
     </application>
 
 </manifest>

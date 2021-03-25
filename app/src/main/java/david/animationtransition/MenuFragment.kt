@@ -7,21 +7,21 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import david.animationtransition.examples.CustomShadowFragment
-import david.animationtransition.examples.DefaultLayoutAnimationFragment
-import david.animationtransition.examples.MotionLayoutFragment
-import david.animationtransition.examples.canvas.CanvasLoadingViewFragment
-import david.animationtransition.examples.drawable.*
-import david.animationtransition.examples.lottie.LottieDrawableFragment
-import david.animationtransition.examples.lottie.LottieProgramaticallyFragment
-import david.animationtransition.examples.lottie.LottieXmlFragment
-import david.animationtransition.examples.property.*
-import david.animationtransition.examples.property.dynamic.*
-import david.animationtransition.examples.recyclerview.RecyclerViewLoadingFragment
-import david.animationtransition.examples.recyclerview.RecyclerViewLoadingStaggeringFragment
-import david.animationtransition.examples.transition.*
-import david.animationtransition.examples.transition.FragmentTransition2Fragment
-import david.animationtransition.examples.viewanimation.ViewAnimationSimpleFragment
+import david.animationtransition.anim.CustomShadowFragment
+import david.animationtransition.anim.DefaultLayoutAnimationFragment
+import david.animationtransition.anim.MotionLayoutFragment
+import david.animationtransition.anim.canvas.CanvasLoadingViewFragment
+import david.animationtransition.anim.drawable.*
+import david.animationtransition.anim.lottie.LottieDrawableFragment
+import david.animationtransition.anim.lottie.LottieProgramaticallyFragment
+import david.animationtransition.anim.lottie.LottieXmlFragment
+import david.animationtransition.anim.property.*
+import david.animationtransition.anim.property.dynamic.*
+import david.animationtransition.anim.recyclerview.RecyclerViewLoadingFragment
+import david.animationtransition.anim.recyclerview.RecyclerViewLoadingStaggeringFragment
+import david.animationtransition.anim.transition.*
+import david.animationtransition.anim.transition.FragmentTransition2Fragment
+import david.animationtransition.anim.viewanimation.ViewAnimationSimpleFragment
 
 class MenuFragment : Fragment() {
 
