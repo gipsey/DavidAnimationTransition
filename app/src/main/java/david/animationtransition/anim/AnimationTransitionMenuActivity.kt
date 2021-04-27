@@ -1,11 +1,12 @@
-package david.animationtransition
+package david.animationtransition.anim
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewTreeLifecycleOwner
+import david.animationtransition.R
 
-class MainActivity : AppCompatActivity() {
+class AnimationTransitionMenuActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         if (savedInstanceState == null)
-            open(MenuFragment::class.java, false)
+            open(AnimationTransitionMenuFragment::class.java, false)
     }
 
     fun open(fragmentClass: Class<out Fragment>, addToBackStack: Boolean = true) {

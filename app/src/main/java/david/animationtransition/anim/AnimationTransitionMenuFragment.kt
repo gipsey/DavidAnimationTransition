@@ -1,4 +1,4 @@
-package david.animationtransition
+package david.animationtransition.anim
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,9 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import david.animationtransition.anim.CustomShadowFragment
-import david.animationtransition.anim.DefaultLayoutAnimationFragment
-import david.animationtransition.anim.MotionLayoutFragment
+import david.animationtransition.R
 import david.animationtransition.anim.canvas.CanvasLoadingViewFragment
 import david.animationtransition.anim.drawable.*
 import david.animationtransition.anim.lottie.LottieDrawableFragment
@@ -23,7 +21,7 @@ import david.animationtransition.anim.transition.*
 import david.animationtransition.anim.transition.FragmentTransition2Fragment
 import david.animationtransition.anim.viewanimation.ViewAnimationSimpleFragment
 
-class MenuFragment : Fragment() {
+class AnimationTransitionMenuFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -104,7 +102,7 @@ class MenuFragment : Fragment() {
 
             fun bind(item: NavigationItem) {
                 textView.text = item.title
-                itemView.setOnClickListener { (activity as MainActivity).open(item.fragment) }
+                itemView.setOnClickListener { (activity as AnimationTransitionMenuActivity).open(item.fragment) }
             }
         }
 

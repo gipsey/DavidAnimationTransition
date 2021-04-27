@@ -18,6 +18,8 @@ class FragmentTransition1Fragment : Fragment() {
                 .replace(R.id.fragment_container, FragmentWithAnim1())
                 .commit()
 
+        childFragmentManager.popBackStack()
+
         view.setOnClickListener { performTransition() }
     }
 
