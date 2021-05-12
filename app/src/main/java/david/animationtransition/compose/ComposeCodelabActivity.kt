@@ -3,11 +3,14 @@ package david.animationtransition.compose
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.TweenSpec
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.material.*
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
+import androidx.compose.runtime.*
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment.Companion.CenterHorizontally
 import androidx.compose.ui.Modifier
@@ -86,7 +89,21 @@ class ComposeCodelabActivity : ComponentActivity() {
 
     @Composable
     private fun Greeting(name: String) {
-        Text(text = "Hello $name")
+        var isSelected by remember { mutableStateOf(false) }
+        val color by animateColorAsState(
+            targetValue = if (isSelected) Color.Red else Color.Transparent,
+            animationSpec = TweenSpec(durationMillis = 800)
+        )
+
+        Timber.d("recomposition - Greeting - $name - isSelected ${isSelected}")
+
+        Text(
+            text = "Hello $name",
+            modifier = Modifier
+                .padding(24.dp)
+                .selectable(isSelected) { isSelected = !isSelected }
+                .background(color)
+        )
     }
 
     @Composable
