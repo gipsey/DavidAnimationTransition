@@ -12,7 +12,6 @@ import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.ComposeView
-import androidx.compose.ui.res.animatedVectorResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.fragment.app.Fragment
 import david.animationtransition.R
@@ -40,10 +39,10 @@ class AVDHandwritingComposeFragment : Fragment() {
 
     @Composable
     private fun AnimatedVector(animate: Boolean) {
-        Image(
-            painter = animatedVectorResource(R.drawable.avd_handwriting_android).painterFor(animate),
-            contentDescription = null,
-            contentScale = ContentScale.None,
-        )
+//        Image(
+//            painter = animatedVectorResource(R.drawable.avd_handwriting_android).painterFor(animate),
+//            contentDescription = null,
+//            contentScale = ContentScale.None,
+//        )
     }
 }
